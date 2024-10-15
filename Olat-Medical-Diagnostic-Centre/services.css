@@ -1,0 +1,235 @@
+/* Container for both sidebars */
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 0; /* Closer to the header */
+}
+
+/* General Sidebar Styling */
+.sidebar {
+    background-color: #f8f8f8;
+    padding: 20px;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* First Sidebar Heading */
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* List for Both Sidebars */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 12px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+    background-color: #3a7ab5;
+    color: #fff;
+}
+
+/* Second Sidebar Styling */
+.second-sidebar {
+    background-color: #3a7ab5;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    width: 60px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Second Sidebar Heading Styling */
+.second-sidebar h3 {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Bullet List Styling */
+.bullet-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bullet-list li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Content inside the second sidebar: text + image side by side */
+.second-sidebar .sidebar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Doctor Image Styling */
+.second-sidebar .doctor-img {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/* Join Button Styling */
+.second-sidebar .join-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #3a7ab5;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for Join Button */
+.second-sidebar .join-button:hover {
+    background-color: #fff;
+    color: #2d6696;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 10px; /* Adjust to move closer to the sidebar */
+    padding: 10px;
+    width: calc(100% - 370px); /* Full width minus the sidebar width */
+    margin-top: 0; /* Closer to the header */
+}
+
+/* Image Styling for Main Content */
+.main-content img.main-image {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Restrict height */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+}
+
+/* Headings within Main Content */
+.main-content h2 {
+    font-size: 1.5em; /* Larger heading for subsections */
+    margin: 20px 0 10px; /* Margin for spacing */
+    color: #3a7ab5; /* Change heading color for visibility */
+}
+
+.main-content p {
+    margin-bottom: 15px; /* Add space between paragraphs */
+    line-height: 1.6; /* Improve readability */
+}
+
+.blood-order-form {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blood-order-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.blood-order-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.blood-order-form input[type="text"],
+.blood-order-form input[type="tel"],
+.blood-order-form select,
+.blood-order-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.blood-order-form input[type="text"]:focus,
+.blood-order-form input[type="tel"]:focus,
+.blood-order-form select:focus,
+.blood-order-form input[type="number"]:focus {
+    border-color: #007BFF; /* Bootstrap primary color */
+    outline: none;
+}
+
+.blood-order-form .submit-button {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.blood-order-form .submit-button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+@media (max-width: 600px) {
+    .blood-order-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+/* Enhancing the hero section */
+.hero {
+    background: url('img2.jpg') no-repeat center center/cover;
+    color: gray;
+    text-align: center;
+    padding: 50px 20px;
+}

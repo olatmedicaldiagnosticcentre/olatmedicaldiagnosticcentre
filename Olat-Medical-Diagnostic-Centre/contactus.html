@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Olat Medical Diagnostic Centre</title>
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Contact Us - Olat Medical Diagnostic Centre" />
+  <meta property="og:description" content="Contact Us" />
+  <meta property="og:image" content="Olat-Medical-Diagnostic-Centre/logo.png" />
+  <meta property="og:url" content="https://olatmedicaldiagnosticcentre.github.io/contactus.html" />
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us - Olat Medical Diagnostic Centre">
+  <meta name="twitter:description" content="Contact Us">
+  <meta name="twitter:image" content="Olat-Medical-Diagnostic-Centre/logo.png">
+  <meta name="twitter:site" content="@olatmedical">
+  <link rel="icon" href="logo.ico" type="image/x-icon">
+  
+  <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <link rel="preload" href="contactus.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="contactus.css"></noscript>
+   <!-- Preload external libraries -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" as="style" onload="this.rel='stylesheet'">
+   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"></noscript>
+   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
+   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"></noscript>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-map-marker-alt"></i> No 34, Hammed Omidiran Way, Opp. Rauf Olaiya Beer Store, Sabo Junction, Osogbo, Osun State.</span>
+        </div>
+        <div class="contact-info">
+          <span><i class="fas fa-phone-alt"></i> +234 814 387 8101</span>
+          <span><i class="fas fa-envelope"></i> <a href="mailto:olatmedicals@gmail.com">olatmedicals@gmail.com</a></span>
+          <span><a href="https://tiktok.com/@olatmedicals" target="_blank"><i class="fab fa-tiktok"></i></a></span>
+          <span><a href="https://www.instagram.com/olatmedicaldiagnosticcentre/" target="_blank"><i class="fab fa-instagram"></i></a></span>
+          <span><a href="https://twitter.com/@olatmedical" target="_blank"><i class="fab fa-twitter"></i></a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Olat Medical Diagnostic Centre Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="ultrasoundclinic.html">Ultrasound Clinic</a>
+              <a href="laboratory.html">Laboratory Test</a>
+              <a href="ecg.html">ECG</a>
+              <a href="bloodbank.html">Blood Bank</a>
+            </div>
+          </li>
+          <li><a href="healtheducation.html">Health Education</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="appointment.html" class="btn">Schedule Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-overlay">
+        <h1>Contact Us</h1>
+    </div>
+</section>
+
+<!-- Contact Info Section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Our Location</h3>
+            <p>No 34, Hammed Omidiran Way,<br>Opp. Rauf Olaiya Beer Store,<br> Sabo Junction, Osogbo, Osun State.</p>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h3>Our Contact</h3>
+            <p>+234 814 387 8101<br>Call or Whatsapp</p>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Our E-Mail</h3>
+            <p>olatmedicals@gmail.com<br>Get detailed responses</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-container">
+        <h2>Get In Touch With Us</h2>
+        <form id="whatsappForm" class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <textarea id="message" placeholder="Write Your Message" required></textarea>
+            <button type="button" class="btn-send" onclick="sendMessage()">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<script>
+  function sendMessage() {
+    // Get the form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    // Create the WhatsApp message
+    const whatsappMessage = `Hello, my name is ${name}.%0AEmail: ${email}%0APhone: ${phone}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    // WhatsApp link
+    const whatsappURL = `https://wa.me/2348143878101?text=${whatsappMessage}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappURL, "_blank");
+  }
+</script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left Section (Need Help) -->
+    <div class="footer-section">
+      <h4>Need Help?</h4>
+      <ul>
+        <li><a href="appointment.html">Get an Appointment</a></li>
+      </ul>
+    </div>
+
+    <!-- Middle Section (Quick Links) -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="ultrasoundclinic.html">Our Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Section (Get in Touch) -->
+    <div class="footer-section">
+      <h4>Get in Touch</h4>
+      <p>No 34, Hammed Omidiran Way,</p>
+      <p>Opp. Rauf Olaiya Beer Store,</p>
+      <p>Sabo Junction, Osogbo, Osun State.</p> 
+      <p><a href="mailto:olatmedicals@gmail.com">olatmedicals@gmail.com</a></p>
+      <p><a href="tel:+2348143878101">+234 814 387 8101</a></p>
+      <p><a href="tel:+2349081213498">+234 908 121 3498</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 Olatmedicals All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://tiktok.com/@olatmedicals"><img src="tiktok.png" alt="Tiktok"></a>
+      <a href="https://twitter.com/@olatmedical"><img src="twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com/olatmedicaldiagnosticcentre"><img src="instagram.jpg" alt="Instagram"></a>
+      <a href="https://wa.me/2348143878101"><img src="whatsapp.jpg" alt="WhatsApp"></a>
+    </div>
+    <p>Developed by ambassADORmadeit</p>
+  </div>
+</footer>  
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
